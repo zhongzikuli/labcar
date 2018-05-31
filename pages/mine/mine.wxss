@@ -1,0 +1,88 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size: 36rpx;
+}
+
+.header{
+  height: 200rpx;
+  width: 100%;
+  background-color: #00b7ee;
+  display: flex;
+  flex-direction: row;
+}
+
+.header-image {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40rpx;
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 70rpx;
+}
+.header-text{
+  color: #FFFFFF;
+  flex: 1;
+  font-size: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+}
+.header-right-image{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80rpx;
+  height: 40rpx; 
+}
+/* 普通行 */
+.row{
+  margin-top: 30rpx;
+  height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+.row-image {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+.row-text{
+  color: #656565;
+  flex: 1;
+  font-size: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+}
+.row-right-image{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80rpx;
+  height: 40rpx; 
+}
+
+/* 退出登录 */
+.logout-base{
+  margin-top: 80rpx;
+  height: 100rpx;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+}
+
+.logout-text{
+  color: #656565;
+  font-size: 40rpx;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 36rpx;
+}

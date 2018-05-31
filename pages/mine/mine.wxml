@@ -1,0 +1,18 @@
+<view class='container'>
+  <view class='header' bindtap='mineInfo'>
+    <image class='header-image flex-item' mode="aspectFit" src='{{portrait}}'></image>
+    <text class='header-text'>{{tel}}</text>
+    <image class='header-right-image flex-item' mode="aspectFit" src="../../images/right-white.png"></image>
+  </view>
+  <view class='row' bindtap='mineLend'>
+    <image class='row-image flex-item' mode="aspectFit" src="../../images/home-lend.png"></image>
+    <text class='row-text'>我的车贷申请</text>
+    <image class='row-right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+  </view>
+
+  <view wx:if='{{isLogin}}' class='logout-base' bindtap='logout'>
+  <text class='logout-text'>
+  退出登录
+  </text>
+  </view>
+</view>

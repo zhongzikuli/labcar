@@ -1,0 +1,18 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.input{
+  padding: 0rpx 30rpx;
+  margin-top: 30rpx;
+  height: 100rpx;
+  background-color: white
+}
+.save{
+  margin: 100rpx 30rpx;
+  background-color: #00b7ee;
+  color: white;
+}

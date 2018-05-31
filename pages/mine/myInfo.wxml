@@ -1,0 +1,22 @@
+<view class='container'>
+  <view class='portrait'>
+    <text class='item-title'>头像</text>
+    <image class='portrait-image' mode="aspectFit" src="{{portrait}}"></image>
+  </view>
+  <view class='info-view'>
+    <view class='item-view flex-wrp'>
+      <text class='item-title flex-item'>手机号</text>
+      <text class='item-text flex-item'>{{tel}}</text>
+    </view>
+    <view class='item-view-name' bindtap='setName'>
+      <text class='item-title flex-item'>姓名</text>
+      <text class='item-text flex-item'>{{name}}</text>
+      <image class='item-right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+    </view>
+    <view class='item-view-idcard' bindtap='setIdcard'>
+      <text class='item-title flex-item'>身份证号</text>
+      <text class='item-text flex-item'>{{cardNo}}</text>
+      <image class='item-right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+    </view>
+  </view>
+</view>

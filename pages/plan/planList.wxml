@@ -1,0 +1,17 @@
+<view class='container'>
+  <block wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <view class='item-view' bindtap='gotoDetail' data-index="{{idx}}">
+    <image class='bank-icon' src='{{iconUrl}}{{item.pictureFileGroup}}/{{item.pictureFilePath}}'>
+    </image>
+    <view class='info-view'>
+    <text class='bank'>{{item.bankName}}({{item.bankCarNoStr}})</text>
+    <text class='carType'>{{item.brandName}}</text>
+    </view>
+    <image class='right-image flex-item' mode="aspectFit" src="../../images/right-white.png"></image>
+    </view>
+  </block>
+  <view wx:if="{{dataList.length==0}}" style="width:100% ;display:flex"> 
+  <text  style='margin-left: auto;margin-right: auto;color:#c9c9c9'>没有相关数据~</text>
+  </view>
+  </view>
+ 

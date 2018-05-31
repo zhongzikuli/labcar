@@ -1,0 +1,25 @@
+<view class='container'>
+  <form bindsubmit="formSubmit">
+    <view class='upper-view flex-wrp'>
+      <view class='item-view' wx:for="{{itemDatas}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+        <image class='icon-image flex-item' mode="aspectFit" src="{{item.image}}"></image>
+        <text class='title-text'>{{item.title}}</text>
+        <!-- 第三个不展示输入框而是城市 -->
+        <text class='input-label' wx:if="{{allowedEdit==false}}">{{details[item.name]}}</text>
+        <block wx:else>
+        <input wx:if="{{idx!=2}}" data-idx="{{idx}}" class='input' bindinput='bindInput' type="{{item.inputType}}" maxlength='{{item.maxLength}}' disabled="{{allowedEdit==false}}" name="{{item.name}}" value='{{details[item.name]}}' placeholder='请输入' placeholder-style='text-align:right'></input>
+        <picker wx:else class='right-view' disabled="{{allowedEdit==false}}" mode="region" bindchange="bindRegionChange">
+          <label class='right-text' name="city">{{details.city.length==0?'请选择':details.city}}</label>
+        </picker>
+        </block>
+        <image wx:if="{{idx==2}}" class='right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+      </view>
+    </view>
+    <view class='remarks'>
+      <text style='color: #656565'>备注</text>
+      <textarea class='remarks-text' value='{{details.customerBak}}' bindinput='bindRemarks' disabled="{{allowedEdit==false}}" name="customerBak" placeholder="请输入备注" maxlength="-1" auto-height="true"></textarea>
+    </view>
+    <button wx:if="{{allowedEdit}}" class='submit-btn' form-type='submit'>提交</button>
+  </form>
+
+</view>

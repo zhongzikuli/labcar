@@ -1,0 +1,43 @@
+{
+  "pages":[
+    "pages/home/home",
+    "pages/home/author",
+    "pages/login/login",
+    "pages/login/register",
+    "pages/common/webview",
+    "pages/mine/mine",
+    "pages/mine/myInfo",
+    "pages/lend/lend",
+    "pages/lend/lendList",
+    "pages/plan/planList",
+    "pages/plan/plan",
+    "pages/mine/settingDetail"
+  ],
+    "window": {
+      "navigationBarBackgroundColor": "#00b7ee",
+      "navigationBarTitleText": "掌上行车",
+      "navigationBarTextStyle": "white",
+      "backgroundTextStyle":"dark",
+      "backgroundColor": "#F8F8F8"
+    },
+    "tabBar": {
+      "color": "#6e6d6b",
+      "selectedColor": "#00b7ee",
+      "borderStyle": "white",
+      "backgroundColor": "#ffffff",
+      "list": [
+        {
+          "pagePath": "pages/home/home",
+          "text": "首页",
+          "iconPath": "images/tabbar-home-off.png",
+          "selectedIconPath": "images/tabbar-home-on.png"
+        },
+        {
+          "pagePath": "pages/mine/mine",
+          "text": "我的",
+          "iconPath": "images/tabbar-mine-off.png",
+          "selectedIconPath": "images/tabbar-mine-on.png"
+        }
+      ]
+    }
+}

@@ -1,0 +1,97 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+.upper-view{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  margin-top:30rpx;
+
+}
+
+.item-view{
+  /* background-color: rebeccapurple; */
+  min-height: 100rpx;
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  margin-left: 20rpx;
+  flex-direction: row;
+}
+.icon-image {
+  margin-top: auto;
+  margin-bottom: auto;
+  width:60rpx;
+  height:60rpx;
+}
+.title-text{
+  color: #656565;
+  font-size: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 40rpx;
+  margin-left:20rpx;
+  width: 200rpx;
+}
+.input{
+  margin: auto 20rpx;
+  flex: 1;
+  text-align: right;
+  color: #656565;
+}
+.input-label{
+  margin: auto 20rpx;
+  flex: 1;
+  text-align: right;
+  color: #656565;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  word-wrap:break-word;
+}
+.right-view{
+  margin: auto 0rpx;
+  flex: 1;
+  text-align: right;
+}
+.right-text{
+  color: #656565;
+  font-size: 38rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* line-height: 40rpx; */
+  margin-left:20rpx;
+  /* flex: 1 */
+}
+.right-image{
+  margin-top: auto;
+  margin-bottom: auto;
+  width:30rpx;
+  height:40rpx;
+  margin-right:15rpx;
+
+}
+
+.remarks{
+  padding :20rpx 20rpx;
+  background-color: white;
+  margin-top: 30rpx;
+}
+.remarks-text{
+  width: 94%;
+  padding: 20rpx 20rpx;
+  margin-top:20rpx;
+  background-color:#f3f3f3;
+  font-size:40rpx;
+  min-height: 150rpx;
+  color: #656565;
+}
+.submit-btn {
+  background-color: #00B7EE;
+  color: white;
+  margin: 60rpx 20rpx;
+}
+.submit-btn:active {
+  opacity: .8;
+}

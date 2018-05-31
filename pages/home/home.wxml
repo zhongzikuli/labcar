@@ -1,0 +1,27 @@
+<view class='container'>
+  <view class='header'></view>
+
+  <view class='money-container flex-wrp'>
+      <image class='money-image flex-item' mode="aspectFit" src="../../images/home-money.png"></image>
+      <view class='money-text flex-item' >
+      <view class='money-textUp flex-wrp'>
+        <text class='flex-item title'>逾期金额</text>
+        <text class='flex-item money'>{{money}}</text>
+        <text class='flex-item unit'>元</text>
+      </view>
+      <text class='money-textBottom' >备注：具体逾期金额以实际银行金额为准</text>
+      </view>
+  </view>
+
+  <view class='plan-container flex-wrp' bindtap='planTap'>
+  <image class='money-image flex-item' mode="aspectFit" src="../../images/home-plan.png"></image>
+  <text class='title-text' >还款计划</text>
+  <image class='right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+  </view>
+  <view class='lend-container flex-wrp' bindtap='lendTap'>
+  <image class='money-image flex-item' mode="aspectFit" src="../../images/home-lend.png"></image>
+  <text class='title-text' >我要车贷</text>
+  <image class='right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+  </view>
+
+</view>

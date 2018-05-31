@@ -1,0 +1,17 @@
+<view class="container">
+  <form bindsubmit="formSubmit">
+    <view class="form-container">
+      <view wx:for="{{formInfo}}" wx:key="unique" class="form-item">
+        <input type="{{item.type}}" bindinput = "{{item.method}}" placeholder-class="phcolor" placeholder="{{item.placeholder}}" class="{{item.class}}" name="{{item.class}}" maxlength="{{item.maxlength}}" />
+        <button wx:if="{{item.maxlength == 11}}" class='number-btn' disabled='{{disabled}}' data-id="2" bindtap="getVerificationCode">
+          {{time}}
+        </button>
+      </view>
+      <view class='tip-view' style="display:inline">
+       <text class='tip-text'>温馨提示:未注册掌上行车帐号的手机号，登录时将自动注册，且代表同意</text>
+       <text class='tip-register' bindtap='tap'>{{register}}</text> 
+      </view>
+       <button form-type="submit" class="login-btn">{{buttonText}}</button>
+    </view>
+  </form>
+</view>

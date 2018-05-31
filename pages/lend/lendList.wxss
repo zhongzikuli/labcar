@@ -1,0 +1,92 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.items {
+  width: 100%;
+  margin-top: 30rpx;
+}
+
+.item {
+  position: relative;
+  background: #fff;
+  margin-bottom: 30rpx;
+  height: 480rpx;
+}
+
+.txt {
+  position: absolute;
+  top: 0;
+}
+
+.left.txt {
+  background-color: #fff;
+  width: 100%;
+  z-index: 5;
+  /* padding:0 20rpx; */
+  transition: left 0.2s ease-in-out;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 480rpx;
+}
+
+.left .title {
+  padding: 20rpx 20rpx 20rpx 0;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 20rpx;
+}
+
+.left .title .icon-image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.left .title .right-image {
+  width: 80rpx;
+  height: 40rpx;
+  margin-top: 10rpx;
+}
+
+.left .title .title-text {
+  color: #656565;
+  flex: 1;
+  font-size: 40rpx;
+  margin-left: 20rpx;
+  line-height: 54rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.left .content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #f3f3f3;
+  justify-content: space-around;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding: 20rpx;
+}
+
+.left .content .info-text {
+  height: 64rpx;
+  color: #656565;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.right {
+  background-color: #e64340;
+  width: 180rpx;
+  text-align: center;
+  z-index: 4;
+  right: 0;
+  color: #fff;
+  height: 480rpx;
+  line-height: 480rpx;
+}

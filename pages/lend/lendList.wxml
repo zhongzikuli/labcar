@@ -1,0 +1,44 @@
+<!-- <view class='container'> -->
+<view class="container">
+  <view class="items">
+    <view wx:for="{{dataList}}" wx:key="{{index}}" class="item" data-index="{{index}}">
+      <view class="left txt" bindtap='gotoDetail' bindtouchstart="touchS" bindtouchmove="touchM" bindtouchend="touchE" data-index="{{index}}" style="{{item.txtStyle}}">
+         <view class="title">
+          <image class='icon-image' mode="aspectFit" src="../../images/home-lend.png"></image>
+          <text class='title-text'>车贷申请{{item.title}}</text>
+          <image class='right-image' mode="aspectFit" src="../../images/right.png"></image>
+         </view>
+         <view class="content">
+          <block wx:for="{{titles}}" wx:key="titleIdx" wx:for-item="titleItem" data-idx="{{titleIdx}}">
+            <text class='info-text'>{{titleItem.title}}{{item[titleItem.key]}}</text>
+          </block>
+         </view>
+      </view>
+      <view class="right txt" data-index="{{index}}" bindtap="delItem">删除</view>
+    </view>
+
+    <view wx:if="{{dataList.length==0}}" style="width:100% ;display:flex"> 
+      <text  style='margin-left: auto;margin-right: auto;color:#c9c9c9'>没有相关数据~</text>
+    </view>
+  </view>
+  <!-- <label wx:if='{{hasMoreData==false &&dataList.length>0}}' style='text-align:center;font-size:25rpx;color:#C9C9C9'>没有更多数据了~</label> -->
+</view>
+<!-- </view> -->
+
+<!--<block wx:for="{{dataList}}" wx:for-index="idx" wx:for-item="item" data-idx="{{idx}}">
+    <view class='item-view' bindtap='gotoDetail' data-index="{{idx}}">
+      <view class='item-header flex-wrp'>
+        <image class='icon-image flex-item' mode="aspectFit" src="../../images/home-lend.png"></image>
+        <text class='title-text'>车贷申请{{idx+1}}</text>
+        <image class='right-image flex-item' mode="aspectFit" src="../../images/right.png"></image>
+      </view>
+      <view class='item-info flex-wrp'>
+        <block wx:for="{{titles}}" wx:for-index="titleIdx" wx:for-item="titleItem" data-idx="{{titleIdx}}">
+        <text class='info-text flex-item'>{{titleItem.title}}{{item[titleItem.key]}}</text>
+         </block>
+      </view>
+    </view>
+</block>
+<view wx:if="{{dataList.length==0}}" style="width:100% ;display:flex"> 
+  <text  style='margin-left: auto;margin-right: auto;color:#c9c9c9'>没有相关数据~</text>
+</view>-->

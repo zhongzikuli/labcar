@@ -1,0 +1,78 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size: 36rpx;
+}
+.portrait{
+  margin-top: 30rpx;
+  width: 100%;
+  height: 200rpx;
+  display: flex;
+  flex-direction:row;
+  background-color: white;
+}
+.portrait-image{
+  width: 140rpx;
+  height: 140rpx;
+  margin: auto 20rpx;
+  border-radius: 70rpx;
+}
+.info-view{
+  margin-top: 30rpx;
+  width: 100%;
+  display: flex;
+  flex-direction:column;
+  background-color: white;
+}
+.item-title{
+  color: #656565;
+  flex: 1;
+  font-size: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+}
+.item-view{
+  /* background-color: rebeccapurple; */
+  height: 100rpx;
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  margin-left: 20rpx;
+
+}
+.item-view-name{
+  /* background-color: rebeccapurple; */
+  height: 100rpx;
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  margin-left: 20rpx;
+
+}
+.item-view-idcard{
+  /* background-color: rebeccapurple; */
+  height: 100rpx;
+  border-bottom: solid 1px lightgray;
+  display: flex;
+  margin-left: 20rpx;
+
+}
+.item-text{
+  color: #656565;
+  font-size: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  line-height: 40rpx;
+}
+.item-right-image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 20rpx;
+}
+.item-view:first-child .item-text{
+  margin-right: 30rpx;
+}

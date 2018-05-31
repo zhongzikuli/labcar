@@ -1,0 +1,65 @@
+
+ .container{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size:36rpx;
+}
+
+.form-container{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size:36rpx;
+  margin-top: 20rpx;
+}
+.form-item{
+  background-color: white;
+  display:flex;
+  margin: 0 0rpx;
+  border-bottom: 1px solid #F3F3F3;
+}
+.form-item:last-of-type{
+  border-bottom:none;
+}
+.form-item input{
+  margin: 0 20rpx;
+  text-align: left;
+  flex: 1;
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.phcolor{  
+    color: #ddd;  
+}
+.number-btn{
+  background-color: white;
+  color: #00B7EE;
+  margin-top: auto;
+  margin-bottom: auto;
+  /* line-height: 60rpx; */
+}
+button[class="number-btn"]::after {
+   border: 0;
+    /* border-left: 1px solid #353535;  */
+}
+.tip-view{
+  margin: 20rpx 20rpx;
+}
+.tip-text{
+  color: #afafaf;
+  font-size: 13px;
+}
+.tip-register{
+  color: #00B7EE;
+  font-size: 13px;
+  display: inline-block;
+}
+.login-btn {
+  background-color: #00B7EE;
+  color: white;
+  margin: 60rpx 20rpx;
+}
+.login-btn:active {
+  opacity: .8;
+}

@@ -1,0 +1,49 @@
+
+.container {
+  display: flex;
+  flex-direction: column;
+  font-size: 36rpx;
+}
+.item-view{
+  margin-top: 30rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  background-color: #00b7ee;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx 20rpx;
+}
+.bank-icon{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 130rpx;
+  height: 130rpx;
+  border-radius: 65rpx;
+}
+.info-view{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.right-image{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80rpx;
+  height: 40rpx; 
+}
+.bank{
+  margin-left: 15rpx;
+  margin-top: 10rpx;
+  color: white;
+  font-size: 35rpx;
+  /* line-height: 38rpx; */
+  flex: 1;
+}
+.carType{
+  margin-left: 15rpx;
+  color: white;
+  font-size: 28rpx;
+  /* line-height: 25rpx; */
+  flex: 1;
+}

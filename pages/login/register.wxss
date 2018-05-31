@@ -1,0 +1,32 @@
+
+ .container{
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size:36rpx;
+  padding: 30rpx 20rpx;
+}
+.main-title{
+  text-align: center;
+  color: #656565;
+  flex: 1;
+  font-size: 40rpx;
+}
+.section-title{
+  text-align: left;
+  color: #595959;
+  flex: 1;
+  font-size: 35rpx;
+}
+.text{
+  text-align: left;
+  color: #9F9F9F;
+  flex: 1;
+  font-size: 25rpx;
+}
+.addtion{
+  text-align: right;
+  color: #9F9F9F;
+  flex: 1;
+  font-size: 25rpx;
+}

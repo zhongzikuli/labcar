@@ -1,0 +1,105 @@
+
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  font-size: 36rpx;
+}
+
+.header {
+  background-color: #00b7ee;
+  height: 120rpx;
+}
+
+/* 欠款 */
+
+.money-container {
+  background-color: white;
+  border-radius: 20rpx;
+  height: 200rpx;
+  margin-top: -100rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  flex-direction: row;
+  display: flex;
+}
+
+.money-image {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 40rpx;
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.money-text {
+  /* background-color: red; */
+  margin: 20rpx 20rpx;
+  flex: 1
+}
+
+.money-textUp{
+  /* background-color: blue; */
+  margin-top: 30rpx;
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items:flex-end;
+font-size: 40rpx;
+}
+.money-textUp .title{
+  color: #656565;
+  flex: 1;
+  font-size: 40rpx;
+}
+.money-textUp .money{
+  font-size: 60rpx;
+  color: #00b7ee;
+  line-height: 60rpx;
+}
+.money-textUp .unit{
+  color: #656565;
+}
+.money-textBottom{
+  margin-top: 10rpx;
+  width: 100%;
+  flex: 1;
+  color: #afafaf;
+  font-size: 25rpx;
+}
+/* 还款计划 */
+.plan-container {
+  background-color: white;
+  border-radius: 20rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  display: flex;
+}
+/* 我要车贷 */
+.lend-container {
+  background-color: white;
+  border-radius: 20rpx;
+  height: 100rpx;
+  margin-top: 40rpx;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
+  display: flex;
+}
+.title-text{
+  color: #656565;
+  flex: 1;
+  font-size: 40rpx;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 20rpx;
+  line-height: 40rpx;
+}
+.right-image{
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 80rpx;
+  height: 40rpx; 
+}

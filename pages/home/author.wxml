@@ -1,0 +1,12 @@
+<view class='author-view'>
+  <view class='base'>
+    <view class='userinfo'>
+      <image class='icon-image' src='{{iconUrl}}'></image>
+      <text class='nickName'>{{nickName}}</text>
+    </view>
+    <text class='tip-text'>由于官方要求，请您手动点击获取您的用户信息</text>
+  </view>
+  <!-- 需要使用 button 来授权登录 -->
+  <button wx:if="{{canIUse}}" class='author-btn' open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">获取用户信息</button>
+  <view wx:else>请升级微信版本</view>
+</view>
